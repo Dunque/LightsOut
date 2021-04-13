@@ -22,8 +22,8 @@ def goal(output):
 
 def main():
 
-    #if len(sys.argv) != 2:
-        #raise ValueError('Please provide a text file to read from')
+    if len(sys.argv) != 2:
+        raise ValueError('Please provide a text file to read from and an output file')
 
     input = open(sys.argv[1], "r")
     output = open(sys.argv[2], 'w+')
