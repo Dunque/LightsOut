@@ -1,8 +1,4 @@
-%Domain description
-cell(1..5,1..5).
-action(tog(X,Y)) :- cell(X,Y).
-
-#program initial.
+#const n=8
 h(cell(1,1),off).
 h(cell(1,2),off).
 h(cell(1,3),off).

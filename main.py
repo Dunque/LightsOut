@@ -26,14 +26,11 @@ def main():
 
     try: 
         length = int(lines[0])
-        output.write('%Domain description\n')
-        output.write('cell(1..'+str(length)+',1..'+str(length)+').\n')
-        output.write('action(tog(X,Y)) :- cell(X,Y).\n')
+        output.write('#const n=8')
     except Exception as e:
         raise ValueError('File has wrong format, the size of the board must only be a positive integer')
 
     output.write('\n')
-    output.write('#program initial.\n')
     for i in range(1, length+1):
         line = lines[i].rstrip()
         validate(line, length)
