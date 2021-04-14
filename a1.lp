@@ -28,8 +28,3 @@ h(cell(5,2),on).
 h(cell(5,3),off).
 h(cell(5,4),off).
 h(cell(5,5),on).
-
-#program final.
-goal :- h(cell(X,Y),off), cell(X,Y).
-:- not goal.
-#show o/1.

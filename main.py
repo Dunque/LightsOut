@@ -14,12 +14,6 @@ def translate(line,numline, output):
         output.write('off).\n') if int(c) == 0 else output.write('on).\n')
         pos=pos+1
 
-def goal(output):
-    output.write('\n')
-    output.write('#program final.\n')
-    output.write('goal :- h(cell(X,Y),off), cell(X,Y).\n')
-    output.write(':- not goal.')
-
 def main():
 
     if len(sys.argv) != 3:
@@ -44,10 +38,6 @@ def main():
         line = lines[i].rstrip()
         validate(line, length)
         translate(line,i, output)
-    goal(output)
-
-    output.write('\n')
-    output.write('#show o/1.')
 
 if __name__ =='__main__':
     main()
