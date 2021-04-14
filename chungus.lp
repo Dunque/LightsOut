@@ -1,4 +1,5 @@
 neigbor(cell(X1,Y1),cell(X2,Y2)) :- |X1-X2|=1, |Y1-Y2|=0.
+neigbor(cell(X1,Y1),cell(X2,Y2)) :- |X1-X2|=0, |Y1-Y2|=1.
 
 #program dynamic
 h(cell(X,Y),on) :- 'h(cell(X,Y),off), o(tog(X,Y)).
