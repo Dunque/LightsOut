@@ -26,7 +26,7 @@ def main():
 
     try: 
         length = int(lines[0])
-        output.write('#const n=8')
+        output.write('#const n='+str(length)+'.')
     except Exception as e:
         raise ValueError('File has wrong format, the size of the board must only be a positive integer')
 
