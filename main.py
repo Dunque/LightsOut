@@ -1,3 +1,6 @@
+#Roi Santos Ríos
+#Antón Concheiro Fernández
+
 import sys
 
 def validate(line, length):

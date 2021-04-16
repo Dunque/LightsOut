@@ -1,3 +1,6 @@
+%Roi Santos Ríos
+%Antón Concheiro Fernández
+
 #program initial.
 cell(1..n,1..n).
 action(tog(X,Y)) :- cell(X,Y).

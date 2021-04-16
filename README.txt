@@ -1,3 +1,7 @@
+Hecho por:
+Roi Santos Ríos
+Antón Concheiro Fernández
+
 Codificar el fichero de entrada con:
 	python main.py <input-file.txt> output-file.lp
 
