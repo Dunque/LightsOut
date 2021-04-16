@@ -3,8 +3,6 @@ cell(1..n,1..n).
 action(tog(X,Y)) :- cell(X,Y).
 neighbor(X1,Y1,X2,Y2) :- |X1-X2|+|Y1-Y2|=1, cell(X1,Y1), cell(X2,Y2).
 
-
-
 near(X1,Y1,X2,Y2) :- |X1-X2|+|Y1-Y2|<3, cell(X1,Y1), cell(X2,Y2).
 
 #program dynamic.
